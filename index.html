@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Eltty test</title>
+  </head>
+  <body>
+    <div class="container container__main">
+      <div
+        class="card card__main"
+        data-controller="checkboxList"
+        data-checkbox-base-name-value="page"
+        data-checkbox-count-value="4"
+        data-check-all-label="All pages"
+      >
+        <div
+          class="card card__header"
+          data-checkbox-list-target="checkAll"
+        ></div>
+        <div class="card__item card__item--fit-height">
+          <div class="separator"></div>
+        </div>
+        <div class="card card__content">
+          <ul data-checkbox-list-target="checkboxList"></ul>
+        </div>
+        <div class="card__item card__item--fit-height">
+          <div class="separator"></div>
+        </div>
+        <div class="card card__footer">
+          <div class="card__item card__item--fit-height">
+            <button class="btn btn__primary">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/scripts/index.js" type="module"></script>
+  </body>
+</html>
